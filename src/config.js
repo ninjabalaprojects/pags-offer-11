@@ -14,7 +14,7 @@ export const SITE_CONFIG = {
       price: "$27",
       priceNumeric: 27,
       format: "Digital PDF · E-Book",
-      checkoutUrl: "REPLACE_WITH_DIGISTORE_FRONT_URL",
+      checkoutUrl: "https://www.checkout-ds24.com/product/727097",
     },
 
     up1: {
@@ -23,7 +23,7 @@ export const SITE_CONFIG = {
       price: "$14",
       priceNumeric: 14,
       format: "Digital PDF",
-      checkoutUrl: "REPLACE_WITH_DIGISTORE_UP1_URL",
+      checkoutUrl: "https://www.checkout-ds24.com/product/727098",
     },
 
     up2: {
@@ -32,7 +32,7 @@ export const SITE_CONFIG = {
       price: "$17",
       priceNumeric: 17,
       format: "Digital PDF",
-      checkoutUrl: "REPLACE_WITH_DIGISTORE_UP2_URL",
+      checkoutUrl: "https://www.checkout-ds24.com/product/727099",
     },
 
     up3: {
@@ -41,7 +41,7 @@ export const SITE_CONFIG = {
       price: "$19",
       priceNumeric: 19,
       format: "Digital PDF",
-      checkoutUrl: "REPLACE_WITH_DIGISTORE_UP3_URL",
+      checkoutUrl: "https://www.checkout-ds24.com/product/727101",
     },
   },
 
