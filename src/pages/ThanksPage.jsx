@@ -108,7 +108,7 @@ export default function ThanksPage() {
       {/* ── TRUST SEAL ───────────────────────────────────── */}
       <div className="thanks-seal">
         <div className="container text-center">
-          <DigistoreTrustSeal />
+          <DigistoreTrustSeal variant="light" center />
         </div>
       </div>
 

@@ -155,7 +155,7 @@ export default function FrontPage() {
               </div>
 
               <div style={{ marginTop: '28px' }}>
-                <DigistoreTrustSeal />
+                <DigistoreTrustSeal variant="dark" />
               </div>
             </div>
 
@@ -400,7 +400,7 @@ export default function FrontPage() {
           </p>
 
           <div style={{ marginTop: '24px' }}>
-            <DigistoreTrustSeal />
+            <DigistoreTrustSeal variant="light" center />
           </div>
         </div>
       </section>

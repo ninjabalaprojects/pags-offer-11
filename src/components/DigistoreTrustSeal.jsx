@@ -4,10 +4,20 @@ import './DigistoreTrustSeal.css';
  * Placeholder for the official Digistore24 trust seal.
  * Replace the inner content with the official Digistore24 embed code
  * once you have received it from your Digistore24 account.
+ *
+ * variant="dark"  — used inside the dark hero (default)
+ * variant="light" — used on light/cream backgrounds
+ * center          — centers the seal horizontally
  */
-export default function DigistoreTrustSeal() {
+export default function DigistoreTrustSeal({ variant = 'dark', center = false }) {
+  const wrapperClass = [
+    'ds24-seal-wrapper',
+    variant === 'light' ? 'ds24-seal-wrapper--light' : '',
+    center ? 'ds24-seal-wrapper--center' : '',
+  ].filter(Boolean).join(' ');
+
   return (
-    <div className="ds24-seal-wrapper" aria-label="Digistore24 secure checkout seal">
+    <div className={wrapperClass} aria-label="Digistore24 secure checkout seal">
       {/* ======================================================
           REPLACE THIS COMMENT BLOCK WITH THE OFFICIAL
           DIGISTORE24 TRUST SEAL CODE WHEN AVAILABLE.

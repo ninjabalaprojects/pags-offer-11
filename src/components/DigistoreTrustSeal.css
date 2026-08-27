@@ -1,20 +1,31 @@
 .ds24-seal-wrapper {
   display: flex;
+  justify-content: flex-start; /* aligns with CTA block in hero */
+}
+
+/* When centered (thanks page, final CTA, upsells) */
+.ds24-seal-wrapper--center {
   justify-content: center;
 }
 
 .ds24-seal-placeholder {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  border: 1px solid var(--color-border);
+  gap: 10px;
+  border: 1px solid rgba(122, 158, 142, 0.35);
   border-radius: var(--radius-md);
-  padding: 10px 20px;
+  padding: 8px 16px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* Light variant — used outside the dark hero */
+.ds24-seal-wrapper--light .ds24-seal-placeholder {
+  border-color: var(--color-border);
   background: white;
 }
 
 .ds24-seal-placeholder__icon {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 
@@ -26,13 +37,22 @@
 
 .ds24-seal-placeholder__label {
   font-family: var(--font-sans);
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  color: var(--color-charcoal);
+  color: #d8eae3;
   letter-spacing: 0.02em;
 }
 
 .ds24-seal-placeholder__sub {
-  font-size: 0.68rem;
+  font-size: 0.65rem;
+  color: #7a9e8e;
+}
+
+/* Light variant text */
+.ds24-seal-wrapper--light .ds24-seal-placeholder__label {
+  color: var(--color-charcoal);
+}
+
+.ds24-seal-wrapper--light .ds24-seal-placeholder__sub {
   color: var(--color-charcoal-light);
 }

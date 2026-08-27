@@ -85,7 +85,7 @@ export default function UpsellLayout({
             </p>
 
             <div style={{ marginTop: '20px' }}>
-              <DigistoreTrustSeal />
+              <DigistoreTrustSeal variant="dark" center />
             </div>
           </div>
         </div>
