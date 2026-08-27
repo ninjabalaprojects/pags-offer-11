@@ -4,7 +4,7 @@
 
 export const SITE_CONFIG = {
   businessName: "HP Digital",
-  domain: "YOURDOMAIN.COM",
+  domain: "birdsguideonline.vercel.app",
   supportEmail: "blackbeltmktsuporte@gmail.com",
 
   products: {
@@ -49,6 +49,6 @@ export const SITE_CONFIG = {
     defaultTitle: "HP Digital — Birdwatching Guides & Field Resources",
     defaultDescription:
       "Premium digital birdwatching guides for beginners. Learn to identify birds, record sightings, and enjoy the outdoors with greater confidence.",
-    ogImage: "https://YOURDOMAIN.COM/og-image.jpg",
+    ogImage: "https://birdsguideonline.vercel.app/og-image.jpg",
   },
 };
