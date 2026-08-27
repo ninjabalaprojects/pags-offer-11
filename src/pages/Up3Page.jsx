@@ -48,7 +48,7 @@ export default function Up3Page() {
   return (
     <UpsellLayout
       product={up3}
-      declinePath="/thanks"
+
       ctaLabel="Yes, Add the Planner"
       declineLabel="No thanks, finish my order"
       includes={includes}

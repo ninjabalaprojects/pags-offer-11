@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import GuaranteeBox from './GuaranteeBox';
@@ -7,21 +6,18 @@ import LegalLinks from './LegalLinks';
 import { SITE_CONFIG } from '../config';
 import './UpsellLayout.css';
 
+// Digistore24 upsell answer URLs — fixed for all upsell pages
+const DS24_YES = 'https://www.checkout-ds24.com/answer/yes?template=light';
+const DS24_NO  = 'https://www.checkout-ds24.com/answer/no';
+
 /**
  * Shared layout for all upsell pages (UP1, UP2, UP3).
  *
- * Props:
- *   product        — SITE_CONFIG.products.up*
- *   declinePath    — where the decline button goes
- *   ctaLabel       — primary CTA button text
- *   declineLabel   — secondary decline text
- *   includes       — string[] list of included items
- *   forYou         — string[] "is for you if"
- *   children       — extra content blocks (e.g. feature details)
+ * Accept button  → DS24_YES  (Digistore24 processes the upsell)
+ * Decline button → DS24_NO   (Digistore24 skips and continues funnel)
  */
 export default function UpsellLayout({
   product,
-  declinePath,
   ctaLabel,
   declineLabel,
   includes,
@@ -65,19 +61,18 @@ export default function UpsellLayout({
 
             <div className="upsell-hero__actions">
               <a
-                href={product.checkoutUrl}
+                href={DS24_YES}
                 className="btn btn--primary btn--xl"
-                rel="noopener noreferrer"
               >
                 {ctaLabel}
               </a>
 
-              <Link
-                to={declinePath}
+              <a
+                href={DS24_NO}
                 className="btn btn--ghost"
               >
                 {declineLabel}
-              </Link>
+              </a>
             </div>
 
             <p className="upsell-hero__guarantee-note">
@@ -158,16 +153,18 @@ export default function UpsellLayout({
 
           <div className="upsell-hero__actions">
             <a
-              href={product.checkoutUrl}
+              href={DS24_YES}
               className="btn btn--primary btn--xl"
-              rel="noopener noreferrer"
             >
               {ctaLabel}
             </a>
 
-            <Link to={declinePath} className="btn btn--ghost">
+            <a
+              href={DS24_NO}
+              className="btn btn--ghost"
+            >
               {declineLabel}
-            </Link>
+            </a>
           </div>
 
           <p style={{ marginTop: '14px', fontSize: '0.76rem', color: 'var(--color-charcoal-light)' }}>

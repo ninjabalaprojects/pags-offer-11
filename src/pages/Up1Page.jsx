@@ -48,7 +48,7 @@ export default function Up1Page() {
   return (
     <UpsellLayout
       product={up1}
-      declinePath="/up2"
+
       ctaLabel="Yes, Add the Field Journal"
       declineLabel="No thanks, continue without it"
       includes={includes}
