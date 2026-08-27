@@ -1,0 +1,15 @@
+.bird-divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block: var(--space-2);
+}
+
+.bird-divider__svg {
+  width: 100%;
+  max-width: 420px;
+  height: 40px;
+}
+
+.bird-divider--light { color: var(--color-sage); }
+.bird-divider--dark  { color: var(--color-sage-light); }

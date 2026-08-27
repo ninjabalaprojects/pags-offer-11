@@ -1,0 +1,192 @@
+/* ── Hero ─────────────────────────────────────────────── */
+.thanks-hero {
+  background: var(--color-forest-deep);
+  padding-block: 72px 80px;
+}
+
+.thanks-hero__check {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: auto;
+  margin-bottom: 28px;
+}
+
+.thanks-hero__title {
+  color: var(--color-cream);
+  margin-bottom: 14px;
+}
+
+.thanks-hero__sub {
+  color: var(--color-sage-light);
+  font-size: 1rem;
+  max-width: 440px;
+  margin-inline: auto;
+}
+
+/* ── Access ───────────────────────────────────────────── */
+.thanks-access { background: white; }
+
+.thanks-access__card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+  background: var(--color-cream);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+  margin-bottom: var(--space-10);
+}
+
+.thanks-access__icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.thanks-access__title {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 10px;
+}
+
+.thanks-access__body {
+  font-size: 0.92rem;
+  color: var(--color-charcoal-mid);
+  line-height: 1.7;
+}
+
+/* Steps */
+.thanks-steps {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.thanks-step {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+}
+
+.thanks-step__num {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--color-forest);
+  color: var(--color-cream);
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.thanks-step__title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 4px;
+}
+
+.thanks-step__desc {
+  font-size: 0.88rem;
+  color: var(--color-charcoal-light);
+}
+
+/* ── Billing ──────────────────────────────────────────── */
+.thanks-billing {
+  background: var(--color-cream);
+  padding-block: var(--space-10);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.thanks-billing__box {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-5);
+  background: white;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-8);
+}
+
+.thanks-billing__icon {
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-top: 4px;
+}
+
+.thanks-billing__title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 8px;
+}
+
+.thanks-billing__body {
+  font-size: 0.88rem;
+  color: var(--color-charcoal-mid);
+  line-height: 1.7;
+}
+
+.thanks-billing__note {
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: var(--color-charcoal-light);
+  font-style: italic;
+}
+
+/* ── Support ──────────────────────────────────────────── */
+.thanks-support { background: white; }
+
+.thanks-support__title {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-forest-deep);
+  margin-bottom: 12px;
+}
+
+.thanks-support__body {
+  font-size: 0.9rem;
+  color: var(--color-charcoal-mid);
+  max-width: 420px;
+  margin-inline: auto;
+  margin-bottom: 16px;
+}
+
+.thanks-support__email {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+.thanks-support__email:hover { color: var(--color-accent-hover); }
+
+/* ── Seal ─────────────────────────────────────────────── */
+.thanks-seal {
+  padding-block: var(--space-8);
+  background: var(--color-cream);
+}
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 520px) {
+  .thanks-access__card { flex-direction: column; }
+  .thanks-billing__box  { flex-direction: column; }
+}

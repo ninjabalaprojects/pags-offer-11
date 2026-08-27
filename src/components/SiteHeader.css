@@ -1,0 +1,33 @@
+.site-header {
+  background-color: var(--color-forest-deep);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.site-header .container {
+  display: flex;
+  align-items: center;
+}
+
+.site-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  text-decoration: none;
+  transition: opacity var(--transition);
+}
+
+.site-logo:hover { opacity: 0.85; }
+
+.site-logo__icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.site-logo__name {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-cream);
+  letter-spacing: 0.01em;
+}

@@ -1,0 +1,44 @@
+/* Shared styles for Up1, Up2, Up3 feature blocks */
+
+.up-feature-block { background: var(--color-warm-white); }
+
+.up-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.up-feature-card {
+  background: white;
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: box-shadow var(--transition);
+}
+
+.up-feature-card:hover { box-shadow: var(--shadow-sm); }
+
+.up-feature-card__icon {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.up-feature-card__label {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-forest-deep);
+}
+
+.up-feature-card__desc {
+  font-size: 0.85rem;
+  color: var(--color-charcoal-light);
+  line-height: 1.6;
+}
+
+@media (max-width: 560px) {
+  .up-feature-grid { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,109 @@
+/* Upsell banner */
+.upsell-banner {
+  background: var(--color-forest);
+  padding-block: 10px;
+  text-align: center;
+}
+.upsell-banner p {
+  font-size: 0.8rem;
+  color: var(--color-sage-light);
+  line-height: 1.5;
+}
+
+/* Upsell hero */
+.upsell-hero {
+  background: var(--color-forest-deep);
+  padding-block: 72px 80px;
+}
+
+.upsell-hero__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.upsell-hero__title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--color-cream);
+  margin-bottom: 10px;
+}
+
+.upsell-hero__subtitle {
+  font-size: 1rem;
+  color: var(--color-sage-light);
+  margin-bottom: 14px;
+}
+
+.upsell-hero__desc {
+  font-size: 0.92rem;
+  color: var(--color-sage-light);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+
+.upsell-hero__price-block {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 12px;
+  margin: 28px 0 20px;
+}
+
+.upsell-hero__price-block .price-display {
+  color: var(--color-cream);
+}
+
+.upsell-hero__price-note {
+  font-size: 0.78rem;
+  color: var(--color-sage-light);
+}
+
+.upsell-hero__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.upsell-hero__guarantee-note {
+  font-size: 0.8rem;
+  color: var(--color-sage-light);
+}
+
+/* Digital notice (reuse fp-digital-notice from FrontPage) */
+.fp-digital-notice {
+  background: var(--color-forest-mid);
+  padding-block: 14px;
+  text-align: center;
+}
+.fp-digital-notice p {
+  font-size: 0.82rem;
+  color: var(--color-sage-light);
+}
+.fp-digital-notice strong { color: var(--color-cream); }
+
+/* Sections */
+.upsell-includes { background: white; }
+.upsell-for      { background: var(--color-cream); }
+.upsell-guarantee { background: white; }
+
+/* Bottom CTA */
+.upsell-bottom-cta__price {
+  margin-block: 20px;
+}
+
+/* Disclaimer */
+.upsell-disclaimer {
+  background: var(--color-cream-deep);
+  padding-block: var(--space-6);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.upsell-disclaimer .legal-text a {
+  color: var(--color-charcoal-light);
+  text-decoration: underline;
+}

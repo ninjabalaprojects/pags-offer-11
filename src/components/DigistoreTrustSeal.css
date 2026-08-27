@@ -1,0 +1,38 @@
+.ds24-seal-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.ds24-seal-placeholder {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  background: white;
+}
+
+.ds24-seal-placeholder__icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.ds24-seal-placeholder__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ds24-seal-placeholder__label {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+  letter-spacing: 0.02em;
+}
+
+.ds24-seal-placeholder__sub {
+  font-size: 0.68rem;
+  color: var(--color-charcoal-light);
+}

@@ -1,0 +1,10 @@
+.guarantee-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.guarantee-badge--lg  .guarantee-badge__svg { width: 110px; height: 110px; }
+.guarantee-badge--md  .guarantee-badge__svg { width: 82px;  height: 82px;  }
+.guarantee-badge--sm  .guarantee-badge__svg { width: 60px;  height: 60px;  }
