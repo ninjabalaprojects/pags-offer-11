@@ -29,6 +29,20 @@ const forYou = [
 export default function Up1Page() {
   useEffect(() => {
     document.title = `${up1.name} | ${SITE_CONFIG.businessName}`;
+
+    const script = document.createElement('script');
+    script.src = 'https://www.digistore24-scripts.com/service/digistore.js';
+    script.async = true;
+    script.onload = () => {
+      if (typeof window.digistoreUpsell === 'function') {
+        window.digistoreUpsell();
+      }
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
   }, []);
 
   return (
