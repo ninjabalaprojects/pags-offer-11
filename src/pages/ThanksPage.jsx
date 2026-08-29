@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 import { SITE_CONFIG } from '../config';
 import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
-import DigistoreTrustSeal from '../components/DigistoreTrustSeal';
 import LegalLinks from '../components/LegalLinks';
 import './ThanksPage.css';
 
@@ -104,13 +103,6 @@ export default function ThanksPage() {
           </a>
         </div>
       </section>
-
-      {/* ── TRUST SEAL ───────────────────────────────────── */}
-      <div className="thanks-seal">
-        <div className="container text-center">
-          <DigistoreTrustSeal variant="light" center />
-        </div>
-      </div>
 
       {/* ── LEGAL LINKS ──────────────────────────────────── */}
       <div className="container container--narrow">

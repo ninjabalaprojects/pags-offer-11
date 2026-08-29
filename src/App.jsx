@@ -9,15 +9,11 @@ import TermsPage       from './pages/TermsPage';
 import RefundPage      from './pages/RefundPage';
 import ContactPage     from './pages/ContactPage';
 import UnsubscribePage from './pages/UnsubscribePage';
-import DigiStoreBadge  from './components/DigiStoreBadge';
 import './index.css';
 
 export default function App() {
   return (
     <BrowserRouter>
-      {/* Loads correct Digistore24 badge per route */}
-      <DigiStoreBadge />
-
       <Routes>
         {/* ── Funnel ────────────────────────────────────── */}
         <Route path="/"              element={<FrontPage />} />

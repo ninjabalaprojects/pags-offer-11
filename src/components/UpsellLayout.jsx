@@ -1,7 +1,6 @@
 import SiteHeader from './SiteHeader';
 import SiteFooter from './SiteFooter';
 import GuaranteeBox from './GuaranteeBox';
-import DigistoreTrustSeal from './DigistoreTrustSeal';
 import LegalLinks from './LegalLinks';
 import { SITE_CONFIG } from '../config';
 import './UpsellLayout.css';
@@ -79,9 +78,6 @@ export default function UpsellLayout({
               🛡️ 60-Day Money-Back Guarantee · Secure Checkout via Digistore24
             </p>
 
-            <div style={{ marginTop: '20px' }}>
-              <DigistoreTrustSeal variant="dark" center />
-            </div>
           </div>
         </div>
       </section>

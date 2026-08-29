@@ -4,7 +4,6 @@ import SiteHeader from '../components/SiteHeader';
 import SiteFooter from '../components/SiteFooter';
 import BookMockup from '../components/BookMockup';
 import GuaranteeBox from '../components/GuaranteeBox';
-import DigistoreTrustSeal from '../components/DigistoreTrustSeal';
 import LegalLinks from '../components/LegalLinks';
 import BirdDivider from '../components/BirdDivider';
 import './FrontPage.css';
@@ -154,9 +153,6 @@ export default function FrontPage() {
                 </p>
               </div>
 
-              <div style={{ marginTop: '28px' }}>
-                <DigistoreTrustSeal variant="dark" />
-              </div>
             </div>
 
             <div className="fp-hero__visual animate-fadeIn animate-delay-2">
@@ -399,9 +395,6 @@ export default function FrontPage() {
             Digital PDF · No physical product · Delivered by email after purchase
           </p>
 
-          <div style={{ marginTop: '24px' }}>
-            <DigistoreTrustSeal variant="light" center />
-          </div>
         </div>
       </section>
 
